@@ -29,7 +29,7 @@ export default function BaseRouter() {
                 <PubRoute exact path='/formfactory' component={FormFactory} wrapper title='Form Factory'/>
                 <PubRoute exact path='/cardfactory' component={CardFactory} wrapper title='Card Factory'/>
                 <PubRoute path='/hiddenrouting' component={HiddenRouting} wrapper title='Hidden Routing'/>
-                <PubRoute exact path='/routeoverload' component={RouteOverloading} wrapper title='Route Overloading'/>
+                <PubRoute exact path='/routeoverload' component={RouteOverloading} title='Route Overloading'/>
             </Switch>
         </Router>
     )
