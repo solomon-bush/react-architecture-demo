@@ -28,7 +28,7 @@ export default function BaseRouter() {
                 <PubRoute exact path='/globalhandler' component={GlobalHandlers} wrapper title='Global Handler'/>
                 <PubRoute exact path='/formfactory' component={FormFactory} wrapper title='Form Factory'/>
                 <PubRoute exact path='/cardfactory' component={CardFactory} wrapper title='Card Factory'/>
-                <PubRoute exact path='/hiddenrouting' component={HiddenRouting} wrapper title='Hidden Routing'/>
+                <PubRoute path='/hiddenrouting' component={HiddenRouting} wrapper title='Hidden Routing'/>
                 <PubRoute exact path='/routeoverload' component={RouteOverloading} wrapper title='Route Overloading'/>
             </Switch>
         </Router>
