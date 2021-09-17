@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter, Link } from 'react-router-dom';
 /* ICON */
 import AccountCircle from '@mui/icons-material/AccountCircle';
 /* MUI */
@@ -9,7 +10,7 @@ import MenuItem from '@mui/material/MenuItem'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography';
 
-export default class TopNav extends Component {
+export default withRouter(class TopNav extends Component {
     
     constructor(props) {
         super(props)
@@ -26,7 +27,9 @@ export default class TopNav extends Component {
         return (
             <AppBar position="fixed" sx={{zIndex: theme => theme.zIndex.drawer + 1}}>
                 <Toolbar sx={{ justifyContent: 'space-between' }}>
-                    <Typography variant='h6' color={theme => theme.palette.secondary.dark}>React Architecture Demo</Typography>
+                    <Link to='/'>
+                        <Typography variant='h6' color={theme => theme.palette.secondary.dark}>React Architecture Demo</Typography>
+                    </Link>                    
                     <IconButton onClick={e => this.handleMenuOpen(e)}>
                         <AccountCircle />
                     </IconButton>
@@ -39,4 +42,4 @@ export default class TopNav extends Component {
             </AppBar>
         )
     }
-}
+})
