@@ -1,0 +1,12 @@
+{
+  "name": "react-architecture-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "components": "cd ./components & npm run start",
+    "patterns": "cd ./paterns & npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Solomon Bush",
+  "license": "ISC"
+}
